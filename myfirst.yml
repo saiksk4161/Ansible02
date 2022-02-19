@@ -9,7 +9,7 @@
   - name: i want to install tree
     apt:
       name: tree
-      state: present
+      state: absent
   - name:
     apt: 
       name: git
