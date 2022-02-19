@@ -5,8 +5,12 @@
   - name: i want to install apache on ubuntu node
     apt: 
       name: apache2
-      state: present
+      state: absent
   - name: i want to install tree
     apt:
       name: tree
+      state: present
+  - name:
+    apt: 
+      name: git
       state: present
