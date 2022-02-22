@@ -1,14 +1,14 @@
 ---
-- hosts: all
+- hosts: mywebserver
   become: yes
   tasks: 
   - name: install webserver on debian node only
     apt: 
       name: apache2 
-      state: absent
+      state: present
     when: ansible_os_family=="Debian"  
   - name: i want to install on RedHat node only
     yum: 
       name: httpd
-      state: absent
+      state: present
     when: ansible_os_family=="RedHat"  
