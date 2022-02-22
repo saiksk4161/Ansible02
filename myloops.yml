@@ -2,10 +2,10 @@
 - hosts: 172.31.90.35
   become: yes
   tasks:
-  - name: 
+  - name: install git tree wget
     apt:
-     name: "{{ item }}"
-     state: present
+      name: "{{ item }}"
+      state: present
     loop:
     - git
     - tree
