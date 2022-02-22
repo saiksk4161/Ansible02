@@ -7,8 +7,21 @@
       name: "{{mywebpkgforubuntu}}" 
       state: present
     when: ansible_os_family=="Debian"  
+
+  - name: webservice start on ubuntu
+    service: 
+      name: "{{mywebpkgforubuntu}}"
+      state: started
+    when: ansible_os_family=="Debian"
+    
   - name: i want to install on RedHat node only
     yum: 
       name: "{{mywebpkgforRedHat}}"
       state: present
+    when: ansible_os_family=="RedHat"
+
+  - name: webserver start on redhat 
+    service:
+      name: "{{mywebpkgforRedHat}}"  
+      state: started
     when: ansible_os_family=="RedHat"
