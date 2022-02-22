@@ -7,7 +7,3 @@
 [myapplicationserver]
 172.31.82.215
 172.31.84.245
-
-[mywebserver:vars]
-mywebpkgforubuntu= apache2
-mywebpkgforRedHat= httpd
