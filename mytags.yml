@@ -11,7 +11,7 @@
   - name: i want to install tree
     apt:
       name: tree
-      statee: present
+      state: present
     tags: mytree
       
   - name: i want to install wget
