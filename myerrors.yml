@@ -5,14 +5,14 @@
   - name: i want to install git
     apt: 
       name: git
-      state: present
+      statee: present
+    ignore_errors: yes
 
   - name: i want to install tree
     apt:
       name: tree
-      statee: present
-    ignore_errors: yes  
-
+      state: present
+      
   - name: i want to install wget
     apt:
       name: wget
