@@ -1,0 +1,10 @@
+--
+- hosts: 172.31.82.213
+  become: yes
+  tasks:
+  - name: i want to execute linux command quickly
+    command: cat /etc/passwd
+    register: myresult
+  - name: i want to display myresult
+    debug:
+      msg: "{{myresult}}" 
