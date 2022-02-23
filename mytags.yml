@@ -6,15 +6,16 @@
     apt: 
       name: git
       state: present
+    tags: mygit  
   
   - name: i want to install tree
     apt:
       name: tree
       statee: present
-    ignore_errors: yes
+    tags: mytree
       
   - name: i want to install wget
     apt:
       name: wget
       state: present
-                 
+    tags: mywget  
