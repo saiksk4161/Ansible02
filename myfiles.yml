@@ -9,12 +9,16 @@
     apt: 
       name: apache2
       state: present
-  - name: i want to start webserver
-    service:
-      name: apache2
-      state: started
+    notify: restartwebserver  
 
   - name: i want to copy myindex.j2 file into nodeside
     template: 
       src: myindex.j2
-      dest: /var/www/html/index.html        
+      dest: /var/www/html/index.html
+    notify: restartwebserver  
+
+  handlers:
+  - name: startwebserver 
+    service:
+      name: apache2
+      state: restarted
