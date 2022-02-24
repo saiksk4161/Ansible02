@@ -12,7 +12,7 @@
   - name: i want to start webserver
     service:
       name: apache2
-      state: present
+      state: started
 
   - name: i want to copy myindex.j2 file into nodeside
     template: 
