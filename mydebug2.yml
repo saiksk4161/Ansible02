@@ -1,8 +1,9 @@
 ---
 - hosts: 172.31.82.213
   become: yes
-  var:
+  vars:
     myresult: git
+
   tasks:
   - name: display myresult
     debug:
@@ -10,4 +11,3 @@
   - name: display myjavapkgonubuntu
     debug:
       msg: "{{myjavapkgonubuntu}}"      
-      
