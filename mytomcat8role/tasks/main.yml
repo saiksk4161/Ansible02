@@ -1,2 +1,7 @@
 ---
 # tasks file for mytomcat8role
+
+- include_tasks: myjava.yml 
+- include_tasks: createusergroup.yml 
+- include_tasks: tomdownload.yml
+- include_tasks: extract.yml
