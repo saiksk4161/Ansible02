@@ -1,0 +1,5 @@
+---
+- hosts: mywebserver
+  become: yes
+  roles:
+   - {role:mytomcat8role.yml, when: ansible_os_family=="Debian"}

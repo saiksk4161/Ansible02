@@ -5,3 +5,7 @@
 - include_tasks: createusergroup.yml 
 - include_tasks: tomdownload.yml
 - include_tasks: extract.yml
+- include_tasks: permissions.yml
+- include_tasks: tomcatservice.yml
+- include_tasks: tomcatstart.yml
+- include_tasks: tomcatuser.yml
