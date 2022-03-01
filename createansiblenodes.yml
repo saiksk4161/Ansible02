@@ -14,4 +14,4 @@
       vpc_subnet_id: subnet-04b4c4bc4bb0c13f4
       assign_public_ip: yes
       instance_tags:
-        name: myansiblenode
+        Name: myansiblenode
